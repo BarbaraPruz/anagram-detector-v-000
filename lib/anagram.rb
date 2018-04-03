@@ -1,5 +1,5 @@
 class Anagram
-  attr_access  :word
+  attr_accessor  :word
 
   def initalize (word)
     @word = word
