@@ -7,7 +7,7 @@ class Anagram
 
   def match ( candidates )
     word_sorted = @word.split('').sort
-    candidates.keep_if { | candidate | candidate.split('').sort == word_sorted }
+    candidates.find_all { | candidate | candidate.split('').sort == word_sorted }
   end
 
 end
